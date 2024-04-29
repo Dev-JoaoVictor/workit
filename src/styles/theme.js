@@ -1,10 +1,10 @@
 export default {
   COLORS: {
-    PRIMARY_100: "#FFFFFF",
-    PRIMARY_200: "#FCF8FF",
-    PRIMARY_300: "#44FFA1",
-    PRIMARY_400: "#584D62",
-    PRIMARY_500: "#24053E",
+    WHITE_100: "#FFFFFF",
+    WHITE_200: "#FCF8FF",
+    GREEN: "#44FFA1",
+    PURPLE_100: "#584D62",
+    PURPLE_200: "#24053E",
   },
   FONTS: {
     PRIMARY: "'Fraunces', sans-serif",
