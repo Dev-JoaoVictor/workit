@@ -21,7 +21,7 @@ export const Container = styled.section`
 
     text-align: center;
 
-     h3 {
+     h2 {
       font-size: 2.8rem;
       margin: 2.4rem 0 1.6rem;
       font-family: ${({ theme }) => theme.FONTS.PRIMARY};

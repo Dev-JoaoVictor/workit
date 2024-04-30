@@ -5,7 +5,7 @@ export function Service({ title, text, icon }) {
     <Container>
       <span>{icon}</span>
       <div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{text}</p>
       </div>
     </Container>
