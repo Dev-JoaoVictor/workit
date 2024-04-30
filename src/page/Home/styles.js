@@ -5,16 +5,11 @@ export const Header = styled.header`
   background-color: ${({ theme }) => theme.COLORS.PURPLE_200};
 
   padding: 0 1.6rem;
-  position: relative;
   height: 48rem;
-
-  > img {
-    position: absolute;
-    left: 50px;
-  }
-
+  
   > div {
-    animation: inicial 500ms  backwards;
+    position: relative;
+    animation: inicial 700ms  backwards;
 
     nav {
       padding-top: 3.2rem;
@@ -47,12 +42,17 @@ export const Header = styled.header`
         }
       }
     }
+
+     > img {
+      position: absolute;
+      left: 30px;
+    }
   }
 
   @keyframes inicial {
     0% {
-      opacity: 0.1;
-      transform: translateX(25px);
+      opacity: 0;
+      transform: translateX(80px);
     }
   }
 `;

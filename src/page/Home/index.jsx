@@ -21,8 +21,8 @@ export function Home() {
             </h1>
             <Button />
           </section>
+          <img src={deviceMobile} alt="" />
         </div>
-        <img src={deviceMobile} alt="" />
       </Header>
       <Services>
         <Service
