@@ -1,13 +1,14 @@
-import { Container, Header } from "./styles";
+import { Header, Services } from "./styles";
 
 import { Button } from "../../components/Button";
+import { Service } from "../../components/Service";
 
 import logoLight from "../../assets/images/logo-light.svg";
 import deviceMobile from "../../assets/images/mobile.png";
 
 export function Home() {
   return (
-    <Container>
+    <main>
       <Header>
         <div>
           <nav>
@@ -20,9 +21,26 @@ export function Home() {
             </h1>
             <Button />
           </section>
-      <img src={deviceMobile} alt="" />
         </div>
+        <img src={deviceMobile} alt="" />
       </Header>
-    </Container>
+      <Services>
+        <Service
+          icon={1}
+          title="Insights acionáveis"
+          text="Otimize seus produtos, melhore a satisfação do cliente e fique à frente da concorrência com nossa análise de dados de produtos."
+        />
+        <Service
+          icon={2}
+          title="Decisões baseadas em dados"
+          text="Tome decisões baseadas em dados com nossa análise de dados de produtos. Nossos relatórios gerados por IA ajudam você a desbloquear insights ocultos nos dados do seu produto."
+        />
+        <Service
+          icon={3}
+          title="Sempre acessível"
+          text="Preços sempre acessíveis que acompanham o seu negócio. Obtenha serviços de análise de dados de produtos de alta qualidade sem custos ocultos ou taxas inesperadas."
+        />
+      </Services>
+    </main>
   );
 }

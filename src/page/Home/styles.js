@@ -1,20 +1,23 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-
-`;
-
 export const Header = styled.header`
+  color: ${({ theme }) => theme.COLORS.WHITE_100};
   background-color: ${({ theme }) => theme.COLORS.PURPLE_200};
 
+  padding: 0 1.6rem;
+  position: relative;
   height: 48rem;
-  padding: 1.6rem 3.2rem;
-  color: ${({ theme }) => theme.COLORS.WHITE_100};
-  
-  
+
+  > img {
+    position: absolute;
+    left: 50px;
+  }
+
   > div {
     animation: inicial 500ms  backwards;
+
     nav {
+      padding-top: 3.2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -35,7 +38,7 @@ export const Header = styled.header`
       text-align: center;
 
       h1 {
-        font-size: ${({ theme }) => theme.FONT_SIZE.SM};
+        font-size: 3.4rem;
         font-family: ${({ theme }) => theme.FONTS.PRIMARY};
         margin-bottom: 4rem;
 
@@ -52,4 +55,13 @@ export const Header = styled.header`
       transform: translateX(25px);
     }
   }
+`;
+
+export const Services = styled.section`
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+
+  padding: 0 1.6rem;
+  margin-top: 12rem;
 `;

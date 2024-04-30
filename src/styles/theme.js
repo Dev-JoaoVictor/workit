@@ -10,10 +10,4 @@ export default {
     PRIMARY: "'Fraunces', sans-serif",
     SECONDARY: "'Manrope', sans-serif",
   },
-  FONT_SIZE: {
-    XS: '1.8rem',
-    SM: '3.2rem',
-    MD: '5.6rem',
-    LG: '8rem',
-  }
 }
