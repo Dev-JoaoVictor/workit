@@ -44,6 +44,7 @@ export const Header = styled.header`
     }
 
      > img {
+      width: 32rem;
       position: absolute;
       left: 30px;
     }
@@ -64,4 +65,36 @@ export const Services = styled.section`
 
   padding: 0 1.6rem;
   margin-top: 12rem;
+`;
+
+export const Message = styled.section`
+  text-align: center;
+  margin-top: 10rem;
+  padding: 1.6rem;
+  position: relative;
+
+  img {
+    width: 28rem;
+  }
+
+  > div {
+    padding: 3rem;
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+    background-color: ${({ theme }) => theme.COLORS.PURPLE_200};
+
+    position:relative;
+    top: -54px;
+
+    h3 {
+      font-size: 3rem;
+      font-family: ${({ theme }) => theme.FONTS.PRIMARY};
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-family: ${({ theme }) => theme.FONTS.SECONDARY};
+      line-height: 2.8rem;
+      margin: 1.6rem 0 2.4rem;
+    }
+  }
 `;

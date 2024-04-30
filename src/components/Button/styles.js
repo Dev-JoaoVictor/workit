@@ -7,5 +7,5 @@ export const Container = styled.button`
   font-family: ${({ theme }) => theme.FONTS.SECONDARY};
   font-weight: bold;
   font-size: 1.6rem;
-  border-radius: 4px;
+  border-radius: 2px;
 `;
