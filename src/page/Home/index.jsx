@@ -1,11 +1,15 @@
-import { Header, Message, Services } from "./styles";
+import { Footer, Header, Message, Services } from "./styles";
 
 import { Button } from "../../components/Button";
 import { Service } from "../../components/Service";
 
-import deviceMobile from "../../assets/images/image-hero.webp";
+import logoDark from "../../assets/images/logo-dark.svg";
 import logoLight from "../../assets/images/logo-light.svg";
 import founder from "../../assets/images/image-founder.webp";
+import twitterIcon from "../../assets/images/icon-twitter.svg";
+import deviceMobile from "../../assets/images/image-hero.webp";
+import facebookIcon from "../../assets/images/icon-facebook.svg";
+import instagramIcon from "../../assets/images/icon-instagram.svg";
 
 export function Home() {
   return (
@@ -20,7 +24,7 @@ export function Home() {
             <h1>
               Dados <strong>adaptados</strong> às suas necessidades
             </h1>
-            <Button  text="saber mais"/>
+            <Button text="saber mais" />
           </section>
           <img src={deviceMobile} alt="imagem ilustrativa de um celular" />
         </div>
@@ -52,9 +56,17 @@ export function Home() {
             aplicativo e impulsionar sua empresa. Solicite acesso abaixo e
             entrarei em contato para agendar uma ligação.
           </p>
-          <Button text="solicitar acesso"/>
+          <Button text="solicitar acesso" />
         </div>
       </Message>
+      <Footer>
+        <img src={logoDark} alt="Logo da empresa Workit" />
+        <div>
+          <img src={facebookIcon} alt="Logo do Facebook" />
+          <img src={twitterIcon} alt="Logo do Twiitter" />
+          <img src={instagramIcon} alt="Logo do Instagram" />
+        </div>
+      </Footer>
     </main>
   );
 }

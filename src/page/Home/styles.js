@@ -98,3 +98,19 @@ export const Message = styled.section`
     }
   }
 `;
+
+export const Footer = styled.footer`
+  display: flex;
+  gap: 5.7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+  margin: 7.4rem 0;
+  padding:  0 1.6rem;
+
+  div {
+    display: flex;
+    gap: 2.8rem;
+  }
+`;
