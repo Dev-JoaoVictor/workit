@@ -4,57 +4,46 @@ export const Header = styled.header`
   color: ${({ theme }) => theme.COLORS.WHITE_100};
   background-color: ${({ theme }) => theme.COLORS.PURPLE_200};
 
-  padding: 0 1.6rem;
   height: 48rem;
-  
+  padding: 0 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+
   > div {
-    position: relative;
-    animation: inicial 700ms  backwards;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.2rem;
 
-    nav {
-      padding-top: 3.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      a {
-        font-size: 1.6rem;
-        color: ${({ theme }) => theme.COLORS.WHITE_100};
-        font-family: ${({ theme }) => theme.FONTS.SECONDARY};
-        font-weight: bold;
-        text-decoration: none;
-        border-bottom: 2px solid ${({ theme }) => theme.COLORS.GREEN};
-        padding-bottom: 2px ;
-      }
-    }
-
-    section {
-      margin: 6.4rem 0;
-      text-align: center;
-
-      h1 {
-        font-size: 3.4rem;
-        font-family: ${({ theme }) => theme.FONTS.PRIMARY};
-        margin-bottom: 4rem;
-
-        strong {
-          border-bottom: 2px solid ${({ theme }) => theme.COLORS.GREEN};
-        }
-      }
-    }
-
-     > img {
-      width: 32rem;
-      position: absolute;
-      left: 30px;
+    a {
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.COLORS.WHITE_100};
+      font-family: ${({ theme }) => theme.FONTS.SECONDARY};
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid ${({ theme }) => theme.COLORS.GREEN};
+      padding-bottom: 2px ;
     }
   }
 
-  @keyframes inicial {
-    0% {
-      opacity: 0;
-      transform: translateX(80px);
+  section {
+    margin: 6.4rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 3.4rem;
+      font-family: ${({ theme }) => theme.FONTS.PRIMARY};
+      margin-bottom: 4rem;
+
+      strong {
+        border-bottom: 2px solid ${({ theme }) => theme.COLORS.GREEN};
+      }
     }
+  }
+
+  > img {
+    align-self: center;
+    width: 30rem;
   }
 `;
 

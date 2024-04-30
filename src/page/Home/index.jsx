@@ -16,18 +16,16 @@ export function Home() {
     <main>
       <Header>
         <div>
-          <nav>
-            <img src={logoLight} alt="Logo da empresa Workit" />
-            <a href="#">Solicitar Acesso</a>
-          </nav>
-          <section>
-            <h1>
-              Dados <strong>adaptados</strong> às suas necessidades
-            </h1>
-            <Button text="saber mais" />
-          </section>
-          <img src={deviceMobile} alt="imagem ilustrativa de um celular" />
+          <img src={logoLight} alt="Logo da empresa Workit" />
+          <a href="#">Solicitar Acesso</a>
         </div>
+        <section>
+          <h1>
+            Dados <strong>adaptados</strong> às suas necessidades
+          </h1>
+          <Button text="saber mais" />
+        </section>
+        <img src={deviceMobile} alt="imagem ilustrativa de um celular" />
       </Header>
       <Services>
         <Service
