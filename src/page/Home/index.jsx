@@ -18,7 +18,7 @@ export function Home() {
         <div>
           <img src={logoLight} alt="Logo da empresa Workit" />
           <a href="#">Solicitar Acesso</a>
-        </div>
+        </div>  
         <section>
           <h1>
             Dados <strong>adaptados</strong> às suas necessidades

@@ -35,4 +35,27 @@ export const Container = styled.section`
 
     }
   }
+
+  @media screen and (min-width: 768px) {
+    gap: 3.2rem;
+    width: 57rem;
+    flex-direction: row;
+    
+    > span {
+      padding: 2rem;
+    }
+    
+    > div {
+      text-align: left;
+
+      h2 {
+        font-size: 3rem;
+        margin-top: 0;
+      }
+
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
 `;
